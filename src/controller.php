@@ -1,16 +1,23 @@
 <?php
 	
-// /{name}
-$app->match('/{name}', function ($name) use ($app) {
+// /
+$app->match('/', function () use ($app) {
+
+    return $app['twig']->render('start.html.twig');
+})
+->method('GET')->bind('start');
+	
+// /hello/{name}
+$app->match('/hello/{name}', function ($name) use ($app) {
 
     return $app['twig']->render(
-        'start.html.twig',
+        'hello.html.twig',
         array(
             'name' => $app->escape($name)
         )
     );
 })
-->method('GET')->bind('start')->value('name', 'World');
+->method('GET')->bind('hello')->value('name', 'World');
 
 // /entries
 $app->match('/entries', function () use ($app) {
