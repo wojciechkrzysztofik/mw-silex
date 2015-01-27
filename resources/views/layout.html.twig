@@ -1,0 +1,19 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Silex Showcase</title>
+</head>
+<body>
+<nav>
+	<a href="{{ path('start') }}">Start</a>
+	<a href="{{ path('entries') }}">Entries list</a>
+</nav>
+
+<div>
+	{% block content %}
+	{% endblock %}
+</div>
+
+</body>
