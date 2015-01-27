@@ -1,2 +1,5 @@
 # mw-silex
-Sandbox app with dbal, twig and forms.
+
+1.0 - Pure Silex with Hello World.
+2.0 - More organized. Added twig, dbal, url generator
+
