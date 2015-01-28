@@ -1,0 +1,11 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <h1>Entries</h1>
+
+    <ul>
+        {% for entry in entries %}
+            <li>{{ entry.name }} - {{  entry.email }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

@@ -3,6 +3,8 @@
         "silex/silex": "~1.2",
         "doctrine/dbal" : "~2.3",
         "symfony/twig-bridge": "~2.3",
-        "twig/twig": "~1.10"
+        "twig/twig": "~1.10",
+        "symfony/form": "~2.3",
+        "symfony/translation": "~2.3"
     }
 }
